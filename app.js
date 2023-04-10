@@ -10,6 +10,8 @@ mongoose.connect(CONNECTION_STRING);
 const app = express()
 app.use(cors())
 app.use(express.json())
+console.log("CONNECTION STRING");
+console.log(CONNECTION_STRING)
 HelloController(app)
 UserController(app)
 TuitsController(app)

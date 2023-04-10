@@ -4,6 +4,7 @@ const HelloController = (app) => {
     });
     app.get('/', (req, res) => {
         res.send('Welcome to Full Stack Development!')
+        res.end(process.env.DB_CONNECTION_STRING)
     });
 }
 export default HelloController;
